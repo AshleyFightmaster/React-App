@@ -1,4 +1,15 @@
-.navbar {
+.nav-bar {
     background-color: darkolivegreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7vh;    
     
+}
+
+.nav-text {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    cursor: pointer;
 }

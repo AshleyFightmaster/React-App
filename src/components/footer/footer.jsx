@@ -13,9 +13,9 @@ export default class Footer extends Component {
     
 
         return (
-            <div className='Footer'>
-                <footer>
-                    <p>This is my footer.</p>
+            <div>
+                <footer className='footer'>
+                    <p className='footer-text'>©To-Do 2022</p>
                 </footer>
             </div>
         )

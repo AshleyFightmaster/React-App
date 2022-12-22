@@ -1,7 +1,17 @@
-.Footer {
+.footer {
     flex-shrink: 0;
     text-align: center;
-    background-color: palegreen;
+    background-color: darkolivegreen;
     color: white;
-    margin-top: auto;
+    height: 7vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-text {
+    color: white;
+    margin: auto;
+
 }
