@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
-
+import './ToDo.css'
 export default class ToDo extends Component {
     
-    // Events
-    deleteHandler = () => {
-        let index = this.props.todos.indexOf(this.props.todo)
-        console.log(index)
-        console.log(this.props.todos.splice(index, 1))
+   
         
-    }
+    
   render() {
-    const {text} = this.props
-    const {deleteHandler} =this
+    const {deleteHandler} =this.props
+    const {completedHandler} = this.props
+    const { inputText } = this.props
+    const { todo } = this.props
+
+    console.log('refresh todo')
     
     return (
       <div className='todo'>
-        <li className='todo-item'>{text}</li>
-        <button className='complete-btn'>Completed</button>
-        <button onClick={deleteHandler} className='trash-btn'>Trash</button>
+        <li className='todo-item' >{todo['text']}</li>
+        <button onClick={completedHandler} className='fa-solid fa-check done-btn'></button>
+        <button value={inputText} onClick={deleteHandler} className="fa-regular fa-trash-can delete-btn"></button>
       </div>
     )
   }

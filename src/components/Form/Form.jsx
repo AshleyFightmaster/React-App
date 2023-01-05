@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Form.css'
 
 export default class ToDoList extends Component {
   render() {
@@ -7,9 +8,9 @@ export default class ToDoList extends Component {
     const { submitToDoHandler } = this.props
 
     return (
-      <form>
+      <form className='searchbox'>
         <input value={this.props.inputText} onChange={inputTextHandler} type='text' className='todo-input'/>
-        <button onClick={submitToDoHandler} className='todo-btn' type='submit'>Add</button>
+        <button className="fa-solid fa-plus form-btn" onClick={submitToDoHandler} type='submit'></button>
       </form>
     )
   };

@@ -42,6 +42,7 @@ class App extends Component {
   
 
     render() {
+      console.log('refresh')
       // Destructuring
       const { inputText } = this.state
       const { inputTextHandler } = this
@@ -54,7 +55,7 @@ class App extends Component {
           <NavBar />
           <h1>My To-Do List</h1>
           <Form inputText={inputText} inputTextHandler={inputTextHandler} submitToDoHandler={submitToDoHandler} />
-          <ToDoList todos={todos}/>
+          <ToDoList inputText={inputText} todos={todos}/>
           {/* <BasicSpeedDial/> */}
           <Footer />
         </div>

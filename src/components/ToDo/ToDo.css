@@ -1,0 +1,31 @@
+.done-btn {
+    margin: 5px;
+    background-color: orange;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+.delete-btn {
+    background-color: orange;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+.todo-item {
+    list-style-type: none;
+    border: solid;
+    border-width: 1px;
+    width:50%;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Moon Dance', cursive;
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
